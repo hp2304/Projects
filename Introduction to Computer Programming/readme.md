@@ -9,6 +9,13 @@ In current time, every word processor is equipped with high-end spell checking a
 * I have used **TRIE** data structure to solve this problem. [This](https://www.youtube.com/watch?v=AXjmTQ8LEoI) helped me to understand TRIE data structure.
 * I have used **C** language to implement this.
 
+### Usage
+```bash
+foo@bar:~$ gcc main.c -o main
+foo@bar:~$ ./main
+```
+Enter string in input, it will show a list of words as suggestions.
+
 ---
 #### Note
 * Also words to build the vocabulary is taken from ubuntu's english dictionary. Which I have copied here as *words.txt*.
