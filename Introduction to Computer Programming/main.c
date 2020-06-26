@@ -92,7 +92,8 @@ trieNode *createDictionaryTree(){
     trieNode *root = (trieNode *)malloc(sizeof(trieNode));
     *root = defaultNode;
 
-    fp = fopen("/usr/share/dict/american-english", "r");
+    //fp = fopen("/usr/share/dict/american-english", "r");
+    fp = fopen("words.txt", "r");
     if (fp == NULL)
         exit(EXIT_FAILURE);
 
