@@ -44,7 +44,7 @@ Client program will **call the sort procedure remotely on server** (*just like A
 
 At client side,
 ```bash
-foo@bar1:~$ ./cli localhost 21 32 11
+foo@bar1:~$ ./cli 192.168.43.31 21 32 11
 3
 21 32 11 
 
