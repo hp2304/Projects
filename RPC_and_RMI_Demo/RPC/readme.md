@@ -54,7 +54,7 @@ Got response from server
 ```
 
 ```bash
-foo@bar3:~$ ./cli localhost 231 34 5 4 23 54 76 343 76 343 121 345 435 5747 32 22 443 687
+foo@bar2:~$ ./cli localhost 231 34 5 4 23 54 76 343 76 343 121 345 435 5747 32 22 443 687
 18
 231 34 5 4 23 54 76 343 76 343 121 345 435 5747 32 22 443 687 
 
@@ -65,7 +65,7 @@ Got response from server
 
 On server side,
 ```bash
-foo@bar2:~$ ./serv
+foo@bar3:~$ ./serv
 
 
 
