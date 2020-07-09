@@ -1,4 +1,4 @@
-Code for once help [kaggle competition for dog breed identification](https://www.kaggle.com/c/dog-breed-identification). Check out metadata of dataset and problem statement on given link.
+Code for once held [kaggle competition for dog breed identification](https://www.kaggle.com/c/dog-breed-identification). Check out metadata of dataset and problem statement on given link.
 
 * I have used **PyTorch** framework for this task.
 * I have also implemented various augmentation techniques.
