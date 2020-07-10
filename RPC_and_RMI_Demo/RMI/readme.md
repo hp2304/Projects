@@ -34,7 +34,7 @@ In client machine,
 foo@client:~$ javac Client.java MyInterface.java
 foo@client:~$ java Client <server ip address> <server port: 4711>
 ```
-To run client program server's ip address and port (one on which server program is running, 4711 in this case) is required. Here *MyInterface.java* is same file as in *server/* directory.
+To run client program server's ip address and port (one on which server program is running, 4711 in this case) is required. Here *MyInterface.java* is same file as in *server/* directory. Of course you can run both in one machine, if so pass *localhost* as server ip.
 
 Upon successful execution, client program will display terminal like interface, in which you can run bash commands as in local terminal. You can execute *cd* commands too, can navigate anywhere in server machine. Now to download a file/directory from server, run this command in our client program, 
 
