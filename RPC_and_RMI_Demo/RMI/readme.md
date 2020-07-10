@@ -23,7 +23,7 @@ foo@server:~$ rmiregistry 8090 &
 foo@server:~$ javac Server.java MyInterface.java
 foo@server:~$ rmic -verbose Server
 ```
-Rmi registry acts as kind of *DNS*, which registers various servers'. Last command will create *Server_Stub.class* file, copy this file to *client/* directory. Now run server program,
+Rmi registry acts as kind of *DNS*, which registers various servers'. Last command will create *Server_Stub.class* file, copy this file to *client/* directory in client machine. Now run server program,
 ```bash
 foo@server:~$ java Server &
 ```
