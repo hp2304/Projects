@@ -36,7 +36,7 @@ foo@client:~$ java Client <server ip address> <server port: 4711>
 ```
 To run client program server's ip address and port (one on which server program is running, 4711 in this case) is required. Here *MyInterface.java* is same file as in *server/* directory.
 
-Upon successful execution client program will display terminal like interface, in which you can run bash commands as in local terminal. You can execute *cd* commands too, navigate everywhere in server machine. Now to download a file/directory from server run this command in our client program, 
+Upon successful execution, client program will display terminal like interface, in which you can run bash commands as in local terminal. You can execute *cd* commands too, can navigate anywhere in server machine. Now to download a file/directory from server, run this command in our client program, 
 
 ```bash
 > get {file/directory name}
@@ -51,7 +51,7 @@ This command will download a zip file (Containing our desired file/directory) in
 ```bash
 > echo <server password> | sudo -S <command to be executed>
 ```
-* Here our shell interface is not color coded like in local terminal and there will be no suggestions (*auto completion*) for commands as in local terminal. You have to write whole commands yourself and execute it.
+* Here our shell interface is *not color coded* like in local terminal and there will be *no suggestions (*auto completion*)* for commands as in local terminal. You have to write whole commands yourself and execute it.
 
 ---
 
