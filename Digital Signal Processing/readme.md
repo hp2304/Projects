@@ -8,7 +8,7 @@ One needs to read following parts from research paper only,
 * Rotations in fixed point arithmetic
 * Design Process in Proposed multiplierless constant rotators
 
-Results (**Rotation error, shown as epsilon symbol**) to be reproduced are shown in table 7 (page 8) for 8 point FFT, for N=8. Same is also displayed in table 1 (page 4) in **Reference-12 Accurate Rotations Based on Coefficient Scaling.pdf** (reference paper), for N = 8,16 and number of bits = 4,5,6,7,8
+Results (**Rotation error only, shown as epsilon symbol**) to be reproduced are shown in table 7 (page 8) for 8 point FFT. Same is also displayed in table 1 (page 4) in **Reference-12 Accurate Rotations Based on Coefficient Scaling.pdf** (reference paper), for N = 8,16 and number of bits = 4,5,6,7,8
 
 Run *proj_code.m*, comments are added for better readability.
 
