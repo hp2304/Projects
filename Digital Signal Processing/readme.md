@@ -2,7 +2,7 @@
 
 Goal was to reproduce results of research paper (**low_complexity_multiplierless_rotators_july2014.pdf**). Only results regarding *coefficient selection for SCR (Single Constant Rotation) and MCR (Multiple Constant Rotations)* has to be generated. 
 
-One needs to read following parts from research paper only,
+One needs to read following parts only from research paper,
 * Abstract
 * Introduction
 * Rotations in fixed point arithmetic
