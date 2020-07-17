@@ -1,6 +1,6 @@
 ## Neural Style Transfer Exercise
 
-There's a course on *Udacity* called **Introduction to Deep Learning with PyTorch**, it's good *free introductory* course. This exercise is part of this course, *style transfer* lesson. Basically, goal is to generate a target image given a content image and style image, such that *target image* has *style of style image* and *content of content image*. For example,
+There's a course on *Udacity* called [Introduction to Deep Learning with PyTorch](https://www.udacity.com/course/deep-learning-pytorch--ud188), it's a *free introductory* course. This exercise is part of this course, *style transfer* lesson. Basically, goal is to generate a target image given a content image and style image, such that *target image* has *style of style image* and *content of content image*. For example,
 
 Content Image, ![Content Image](images/janelle.png)
 
