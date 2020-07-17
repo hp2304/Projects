@@ -1,1 +1,1 @@
-These are some of the projects and other cool stuff I did throughout my bachelors.
+These are some of the projects and other cool stuff I made throughout my bachelors.
