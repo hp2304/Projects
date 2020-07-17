@@ -2,11 +2,22 @@
 
 There's a course on *Udacity* called [Introduction to Deep Learning with PyTorch](https://www.udacity.com/course/deep-learning-pytorch--ud188), it's a *free introductory* course. This exercise is part of this course, *style transfer* lesson. Basically, goal is to generate a target image given a content image and style image, such that *target image* has *style of style image* and *content of content image*. For example,
 
-Content Image, ![Content Image](images/janelle.png)
+given content Image, 
 
-Style Image, ![Content Image](images/magritte.jpg)
+<br/>
 
-Target Image generated from content and style images,
+![Content Image](images/janelle.png)
+
+and style Image,
+
+<br/>
+
+![Content Image](images/magritte.jpg)
+
+below target image generated from content and style images,
+
+<br/>
+
 ![Content Image](result.jpg)
 
 <br/>
