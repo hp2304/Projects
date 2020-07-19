@@ -6,19 +6,19 @@ given content Image,
 
 <br/>
 
-![Content Image](images/janelle.png)
+![Content Image](content.jpg)
 
 and style Image,
 
 <br/>
 
-![Content Image](images/magritte.jpg)
+![Style Image](style.jpg)
 
 below target image generated from content and style images,
 
 <br/>
 
-![Content Image](result.jpg)
+![Target Image](result.jpg)
 
 <br/>
 <br/>
