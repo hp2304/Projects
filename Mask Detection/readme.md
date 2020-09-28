@@ -4,7 +4,18 @@ I have finetuned mobilenet_v3 on [this](https://www.kaggle.com/ashishjangra27/fa
 
 *test .py* contains code for running inference on test images. See the results of some sample images below.
 
+<br/>
+
 ![Sample Image 1](images/sample1_out.jpg)
+
+<br/>
+
 ![Sample Image 2](images/sample4_out.jpg)
+
+<br/>
+
 ![Sample Image 3](images/sample3_out.jpg)
+
+<br/>
+
 ![Sample Image 4](images/sample2_out.jpg)
