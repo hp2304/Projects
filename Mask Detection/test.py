@@ -25,7 +25,7 @@ mask_detector.load_state_dict(torch.load('models/Mobilenet_v2_Mask_Detection.pt'
 mask_detector.eval()
 
 # img_path = input('Enter image path: ')
-img_path = 'images/sample4.jpg'
+img_path = 'images/sample3.jpg'
 
 # Read input image
 image = cv2.imread(img_path)
