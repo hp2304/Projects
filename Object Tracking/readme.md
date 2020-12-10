@@ -97,6 +97,6 @@ foo@bar:~$ ffmpeg -i s3_yolov4_tiny.mp4 -vf "fps=10,scale=720:-1:flags=lanczos,s
 
 As you can observe in the results, there's some flickering due to object detector's failure to detect the object but yet our tracking algorithm is smart enough to identify that same object in upcoming frames.
 
-You can always *tune hyperparametrs* to get the best out of it for your own input videos.
+You can always *tune hyperparameters* to get the best out of it for your own input videos.
 
 **Note**: You can find these input videos online by googling :)
