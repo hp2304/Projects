@@ -95,37 +95,26 @@ def detect_cv2_camera(cfgfile, weightfile, savename, outpath, classname, videoso
         print('Predicted in %f seconds.' % (finish - start))
 
         boxes = boxes[boxes[:, 6] == filter_classid]
-        if len(boxes) == 0:
-            cv2.imshow('Yolov4', img)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                break
-            if outpath:
-                video_writer.write(img)
-            if savename:
-                path = savename + str(cnt) + '.jpg'
-                cv2.imwrite(path, img)
-            cnt += 1
-            continue
-        boxes = torch.cat((boxes, torch.arange(0, boxes.shape[0]).view(boxes.shape[0],1)), 1)
-        
 
-        if is_first:
-            # Don't do matching
-            tracking_data = torch.cat((boxes, torch.ones(boxes.shape[0], 1)), axis=1)
-            is_first = False
-        else:
-            x_iou = calculate_1d_iou(boxes[:, 0], boxes[:, 2], tracking_data[:, 0], tracking_data[:, 2])
-            y_iou = calculate_1d_iou(boxes[:, 1], boxes[:, 3], tracking_data[:, 1], tracking_data[:, 3])
-            iou_mat = x_iou * y_iou
-            tracking_data, boxes = match(iou_mat, tracking_data, boxes)
+        if len(boxes) != 0:
+            boxes = torch.cat((boxes, torch.arange(0, boxes.shape[0]).view(boxes.shape[0],1)), 1)
+            if is_first:
+                tracking_data = torch.cat((boxes, torch.ones(boxes.shape[0], 1)), axis=1)
+                is_first = False
+            else: 
+                x_iou = calculate_1d_iou(boxes[:, 0], boxes[:, 2], tracking_data[:, 0], tracking_data[:, 2])
+                y_iou = calculate_1d_iou(boxes[:, 1], boxes[:, 3], tracking_data[:, 1], tracking_data[:, 3])
+                iou_mat = x_iou * y_iou
+                tracking_data, boxes = match(iou_mat, tracking_data, boxes)
 
-        if savename:
-            path = savename + str(cnt) + '.jpg'
         result_img = plot_boxes_cv2(img, boxes, savename=path, class_names=class_names)
 
         cv2.imshow('Yolov4', result_img)
         if outpath:
             video_writer.write(result_img)
+        if savename:
+            path = savename + str(cnt) + '.jpg'
+            cv2.imwrite(path, result_img)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
         cnt += 1
