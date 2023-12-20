@@ -1,0 +1,6 @@
+*.docx
+*.npy
+__pycache__/
+models/
+dataset_metadata/
+
