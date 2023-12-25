@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0,2 python -m torch.distributed.launch --nproc_per_node=2 --use_env train.py -b 4 -j 32 --world-size 2 --output-dir models_iter2 --lr 0.005 --trainable-backbone-layers 4 --epochs 20 --test-only --resume models_iter2/model_5.pth
