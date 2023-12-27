@@ -1,4 +1,4 @@
-# Cloth Detection and Retrieval
+# Clothing Detection and Retrieval
 
 ## Objective
 
