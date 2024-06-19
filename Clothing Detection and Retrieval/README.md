@@ -99,12 +99,49 @@ I have finetuned MaskRCNN architecture with Resnet-18 backbone network on the De
 | ![](./test_drawings/046520.jpg) | ![](./test_drawings/046520_pred.jpg) |
 | ![](./test_drawings/061129.jpg) | ![](./test_drawings/061129_pred.jpg) |
 
+### 2. Retrieval
 
+#### Referred Research Article
+
+-  Liu, G., & Yang, J. (2013). Content-based image retrieval using color difference histogram. Pattern Recognition, 46(1), 188–198. https://doi.org/10.1016/j.patcog.2012.06.001
+
+
+#### Results
+
+- First column corresponds to single query image (due to ease of plotting), rest of the columns are refers to 12 most similar looking recommendations. Query images are picked from validation set and gallery images are the training set, intersection between them is null. The algorithm is good at extracting edge and color information.
+
+![](retrieval/results/A8BEB3.jpg)
+![](retrieval/results/5FC44A.jpg)
+![](retrieval/results/64AA34.jpg)
+![](retrieval/results/BD0418.jpg)
+![](retrieval/results/4FF4E8.jpg)
+![](retrieval/results/02C48B.jpg)
+![](retrieval/results/174573.jpg)
+![](retrieval/results/801FCD.jpg)
+![](retrieval/results/11BC16.jpg)
+![](retrieval/results/29C336.jpg)
+![](retrieval/results/2DDB44.jpg)
+![](retrieval/results/A36C65.jpg)
+![](retrieval/results/05E36A.jpg)
+![](retrieval/results/9AB75C.jpg)
+![](retrieval/results/6ED48F.jpg)
+![](retrieval/results/82B24A.jpg)
+![](retrieval/results/2C239E.jpg)
+![](retrieval/results/F126B2.jpg)
+![](retrieval/results/7CBB8F.jpg)
+![](retrieval/results/585514.jpg)
+![](retrieval/results/7C7C8C.jpg)
+![](retrieval/results/B6BB56.jpg)
+![](retrieval/results/38330C.jpg)
+![](retrieval/results/074538.jpg)
+![](retrieval/results/EFD5EF.jpg)
+![](retrieval/results/6A3FE3.jpg)
 
 ## References
 
 1. Y. Ge, R. Zhang, X. Wang, X. Tang and P. Luo, "DeepFashion2: A Versatile Benchmark for Detection, Pose Estimation, Segmentation and Re-Identification of Clothing Images," 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), Long Beach, CA, USA, 2019, pp. 5332-5340, doi: 10.1109/CVPR.2019.00548.
-2. Torchvision v0.8.2 References, https://github.com/pytorch/vision/tree/v0.8.2/references/detection
-3. DeepFashion2 Github, https://github.com/switchablenorms/DeepFashion2
+2. Liu, G., & Yang, J. (2013). Content-based image retrieval using color difference histogram. Pattern Recognition, 46(1), 188–198. https://doi.org/10.1016/j.patcog.2012.06.001
+3. Torchvision v0.8.2 References, https://github.com/pytorch/vision/tree/v0.8.2/references/detection
+4. DeepFashion2 Github, https://github.com/switchablenorms/DeepFashion2
 
 
